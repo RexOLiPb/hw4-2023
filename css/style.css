@@ -156,9 +156,9 @@ img {
 
 
   /* Requirement 15 code here -- Do not remove this comment. */
-  .container {
-    grid-template-rows: min-content;
-    grid-gap: 10px;
+  img{
+    height: 100%;
+    object-fit: cover;
   }
 
 }
