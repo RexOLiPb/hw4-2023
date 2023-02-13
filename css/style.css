@@ -28,8 +28,6 @@ nav a:focus {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   row-gap: 30px;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Requirement 4 code here -- Do not remove this comment. */
@@ -41,7 +39,6 @@ nav a:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-column: 1/-1;
 
 }
 
@@ -91,7 +88,6 @@ img {
 /* Requirement 9 code here -- Do not remove this comment. */
 .text {
   align-self: center;
-  text-align: center;
   max-height: 40vh;
   overflow: scroll;
 }
