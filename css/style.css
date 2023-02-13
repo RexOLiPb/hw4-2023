@@ -2,14 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #737373;
-  font-size: 18px;
-  line-height: 1.15;
-  margin: 0;
-  padding: 0;
-}
-
 a.skip {
   background: white;
   padding: 6px;
@@ -55,24 +47,8 @@ nav a:focus {
 
 
 /* Requirement 5 code here -- Do not remove this comment. */
-.about {
-  grid-row-start: 2;
-  grid-column: 2 / span 1;
-}
-
-.method {
-  grid-row-start: 3;
-  grid-column: 2 / span 1;
-}
-
-.clients {
-  grid-row-start: 4;
-  grid-column: 2 / span 1;
-}
-
-.contact {
-  grid-row-start: 5;
-  grid-column: 2 / span 1;
+.about, .clients, .method, .contact{
+  grid-column:2/3 ;
 }
 
 /* Requirement 6 code here -- Do not remove this comment. */
@@ -82,38 +58,10 @@ img {
 
 
 /* Requirement 7 code here -- Do not remove this comment. */
-.about-image {
-  grid-row-start: 2;
-  grid-column: 1/-1;
-  max-height: 500px;
-  grid-auto-flow: column;
+.about-image, .clients-image, .method-image, .contact-image{
   overflow: hidden;
-}
-
-.method-image {
-  grid-row-start: 3;
-  grid-column: 1/-1;
+  grid-column:1 / span 3;
   max-height: 500px;
-  grid-auto-flow: column;
-  overflow: hidden;
-}
-
-.clients-image {
-  grid-row-start: 4;
-  grid-column: 1/-1;
-  max-height: 500px;
-  grid-auto-flow: column;
-
-  overflow: hidden;
-}
-
-.contact-image {
-  grid-row-start: 5;
-  grid-column: 1/-1;
-  max-height: 500px;
-  grid-auto-flow: column;
-
-  overflow: hidden;
 }
 
 
@@ -142,8 +90,8 @@ img {
 
 /* Requirement 9 code here -- Do not remove this comment. */
 .text {
-  text-align: center;
   align-self: center;
+  text-align: center;
   max-height: 40vh;
   overflow: scroll;
 }
@@ -169,12 +117,10 @@ img {
 
 
   /* Requirement 11 code here -- Do not remove this comment. */
-  a.skip {
+  a.skip:focus{
     position: absolute;
     top: 20px;
     left: 0;
-  }
-  a.skip:focus{
     text-decoration-line: overline;
     text-decoration-thickness: 10px;
     text-decoration-color: yellow;
