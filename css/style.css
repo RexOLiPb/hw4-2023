@@ -23,12 +23,11 @@ a.skip {
 }
 
 /* Requirement 2 code here -- Do not remove this comment. */
-nav a :focus {
-  border-top: 10px solid yellow;
-}
-
-nav a:hover{
-  border-top: 10px solid yellow;
+nav a:focus {
+  text-decoration-line: overline;
+  text-decoration-thickness: 10px;
+  text-decoration-color: yellow;
+  outline: none;
 }
 
 
@@ -156,7 +155,7 @@ img {
 /*Add the media query here.  Make sure to */
 
 
-@media(min-width: 700px) {
+@media screen and (min-width: 700px) {
   nav {
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
