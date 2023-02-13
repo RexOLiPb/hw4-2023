@@ -18,22 +18,25 @@ a.skip {
   z-index: 1;
   /* Requirement 1 code here -- Do not remove this comment. */
   position: relative;
-  left: -400px;
+  left: 400px;
   top: -200px;
 }
 
 /* Requirement 2 code here -- Do not remove this comment. */
-nav a:focus {
+nav a :focus {
   border-top: 10px solid yellow;
 }
 
+nav a:hover{
+  border-top: 10px solid yellow;
+}
 
 
 /* Requirement 3 code here -- Do not remove this comment. */
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-row-gap: 30px;
+  row-gap: 30px;
   justify-content: center;
   align-items: center;
 }
