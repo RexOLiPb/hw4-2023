@@ -17,8 +17,8 @@ a.skip {
   transition: left 1s ease-out;
   z-index: 1;
   /* Requirement 1 code here -- Do not remove this comment. */
-  position: relative;
-  left: 400px;
+  position: absolute;
+  left: -400px;
   top: -200px;
 }
 
@@ -156,7 +156,7 @@ img {
 /*Add the media query here.  Make sure to */
 
 
-@media(min-width: 1100px) {
+@media(min-width: 700px) {
   nav {
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
