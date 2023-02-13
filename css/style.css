@@ -160,7 +160,6 @@ img {
   nav {
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-    justify-items: right;
     text-align: right;
 
   }
@@ -196,7 +195,7 @@ img {
   .method,
   .clients-image,
   .contact-image {
-    grid-column: 3 / -1;
+    grid-column: 3 / span 2;
   }
 
 
@@ -206,24 +205,13 @@ img {
   .contact,
   .about-image,
   .method-image {
-    grid-column: 2 / 4;
+    grid-column: 2 / span 2;
   }
 
 
   /* Requirement 15 code here -- Do not remove this comment. */
   .container {
-    row-gap: calc(10% + 20px);
-    position: relative;
-  }
-
-  .contact-image {
-    /* position: relative; */
-
-  }
-
-  footer {
-    position: absolute;
-    bottom: 20px;
+    /* row-gap: calc(10% + 20px); */
   }
 }
 
