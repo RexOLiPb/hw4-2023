@@ -144,9 +144,8 @@ img {
 .text {
   text-align: center;
   align-self: center;
-  max-height: 30vh;
+  max-height: 40vh;
   overflow: scroll;
-
 }
 
 
@@ -155,11 +154,11 @@ img {
 /*Add the media query here.  Make sure to */
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   nav {
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-    text-align: right !important; 
+    text-align: right !important;
 
   }
 
@@ -183,7 +182,7 @@ img {
   .container {
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
-    /* grid-template-rows: 300px 300px 300px 300px; */
+    grid-template-rows: 300px 300px 300px 300px;
   }
 
 
@@ -209,6 +208,11 @@ img {
 
 
   /* Requirement 15 code here -- Do not remove this comment. */
+  .container {
+    grid-template-rows: min-content;
+    grid-gap: 10px;
+  }
+
 }
 
 /** Code for prefers reduced motion **/
