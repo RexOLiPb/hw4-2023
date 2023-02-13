@@ -160,7 +160,7 @@ img {
   nav {
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-    text-align: right;
+    text-align: right !important; 
 
   }
 
